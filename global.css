@@ -8,3 +8,32 @@ body {
   margin: auto;
   padding: 1em;
 }
+
+
+em#any-time-label {
+  display: inline-block;        /* ← change from block to inline-block */
+  width: 5ch;                   /* reserve same width as a time like 11:59 */
+  text-align: right;
+  color: gray;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+label {
+  margin-left: auto;
+}
+
+time, em {
+  display: inline;
+  margin-left: 0.5em;
+}
+
+#time-slider {
+  width: 450px; /* or try 100%, or 20em, or any value you like */
+}
+
+#selected-time {
+  display: inline-block;
+  width: 4.5em; /* enough for '11:59 PM' */
+  text-align: right;
+}
